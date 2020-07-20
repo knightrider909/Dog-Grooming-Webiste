@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*1rem = 10px, 10px/16px = 62.5%*/ }
+
+body {
+  background-color: grey;
+  color: black; }
+
+.container {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: min-content, repeat(1, 100%);
+  grid-template-rows: repeat(6, 200px); }
+
+.nav-bar {
+  grid-column: 1/2;
+  grid-row: 1/3; }
+
+main {
+  grid-column: 2/3;
+  grid-row: 2 /4; }
+
+footer {
+  grid-column: 1 / span 3;
+  grid-row: 5 / 6; }
+
+.test {
+  color: yellow; }
+
+.nav-bar {
+  padding-left: 3rem;
+  padding-top: 3rem; }
+  .nav-bar--logo {
+    height: 20rem;
+    width: 20rem; }
+  .nav-bar--mainHeader {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 3rem; }
+  .nav-bar--navigationLinks {
+    list-style: none; }
+    .nav-bar--navigationLinks li a {
+      text-decoration: none;
+      color: black;
+      line-height: 5rem; }
+  .nav-bar--icon1 {
+    color: #3b5998;
+    margin-right: 2rem; }
+  .nav-bar--icon2 {
+    color: #405de6; }
+
+.main {
+  display: grid;
+  grid-template-rows: max-content, max-content;
+  gap: 5rem; }
+  .main--mainImage {
+    z-index: 1; }
+  .main--helpfulHints {
+    z-index: 1000; }
+  .main--tipsTricks--header {
+    text-decoration: underline; }
+
+footer {
+  border: 2px solid black; }
