@@ -1,0 +1,20 @@
+{
+  "name": "dog-grooming-website",
+  "version": "1.0.0",
+  "description": "dog grooming website with more details",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "dog",
+    "grooming",
+    "pets",
+    "cleaning"
+  ],
+  "author": "giulio montaque",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
